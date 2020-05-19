@@ -2,6 +2,9 @@ body {
   background-color: #FFFFFF;
 }
 
+div.image {
+  align-content: center;
+}
 div.header {
   background-color: #9DB5B2;
   text-align: center;
