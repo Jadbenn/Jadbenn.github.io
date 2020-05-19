@@ -6,6 +6,7 @@ div.image {
   align-content: center;
 }
 div.header {
+  width: 100%;
   position: fixed;
   background-color: #9DB5B2;
   text-align: center;
@@ -35,7 +36,6 @@ div.question3 {
   margin: 20px;
   padding: 20px;
 }
-////////////////////////////////
 
 .wrap {
   font:12px Arial, san-serif;
