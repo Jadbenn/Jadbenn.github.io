@@ -2,5 +2,8 @@ body {
   background-color: lightblue;
 }
 .question1 {
-  blackground-color: red;
+  background-color: black;
+  color: white;
+  margin: 20px;
+  padding: 20px;
 }
