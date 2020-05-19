@@ -6,10 +6,12 @@ div.image {
   align-content: center;
 }
 div.header {
+  position: fixed;
   background-color: #9DB5B2;
   text-align: center;
   padding: 20px;
   text
+
 }
 div.question1 {
   background-color: #EB5E28;
