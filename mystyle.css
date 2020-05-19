@@ -10,7 +10,7 @@ div.question1 {
 p {
   text-color: blue;
 }
-.header {
+div.header {
   background-color: yellow;
   text-align: center;
   padding: 20px;
