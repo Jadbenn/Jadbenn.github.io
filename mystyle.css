@@ -1,7 +1,7 @@
 body {
   background-color: lightblue;
 }
-.question1 {
+div.question1 {
   background-color: black;
   color: white;
   margin: 20px;
