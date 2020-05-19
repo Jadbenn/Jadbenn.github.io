@@ -1,103 +1,108 @@
 <html>
+<div class="bg-image"></div>
+
+<div class="bg-text">
+<h1>Sondage pour le site web de l'Université d'Ottawa.</h1>
+<p>Clickez <a href="http://uottawa.ca">ici</a> pour etre dirigé au site web.</p>
+</div>
   <link rel="stylesheet" type="text/css" href="mystyle.css"></link>
   <header>
     <div class="header">
-    <h1>SONDAGE</h1>
+    <h1 style="color:white">SONDAGE</h1>
+  </div>
+
+  <div id="container">
+    <div class="row">
+      <div class="column">
+
+        <img src="images/sc1.png" alt="img1" style="width:100%">
+      </div>
+      <div class="column">
+
+        <img src="images/sc2.png" alt="img2" style="width:100%">
+      </div>
+      <div class="column">
+
+        <img src="images/sc3.png" alt="img3" style="width:100%">
+      </div>
+    </div>
   </div>
   </header>
 
   <body>
-    <div>
-    <br><br><h1>Sondage pour le site web de l'Université d'Ottawa. Clickez <a href="http://uottawa.ca">ici</a> pour etre dirigé au site web.
-    </div>
-    <form name="my form" method="POST">
-      <div class="image">
-        <a href="http://uottawa.ca">
-        <img src="images/image.png" alt="http://uottawa.ca" width="700" height="450">
-        </a>
-      </div>
-      <div class="question1">
-      <p>Êtes-vous satisfait du design et de l'accessibilité du site web? Expliquez votre réponse.<input type="text" name="quest1"><br></p>
-      <p>Êtes-vous satisfait de la recherche par mot-clé? <input type="text" name="quest1"></p>
-      </div>
-      <div class="question2">
-      Les couleurs utilisées sont-elles harmonieuses et logiquement liées ?<br>
-      <input type="radio" name="sex" value="male">Oui<br>
-      <input type="radio" name="sex" value="Female">Non<br>
-      </div>
-      <div class="question3">
-      What is your favourite fruit?<br>
+
+    <form name="my form" method="POST"><br>
+
+      <div class="question1" style="size:12px; font:16px Arial, san-serif">
+      Etes-vous?<br><br>
       <select name= "favorite">
-        <option value="Apples" selected="selected">Apples</option>
-        <option value="Oranges">Oranges</option>
-        <option value="Bananas">Bananas</option><br>
+        <option value="Etudiant" selected="selected">Etudiant</option><br>
+        <option value="Employe/professeur">Employe/professeur</option><br>
+        <option value="Autre">Autre</option><br></select>
       </div>
-      <div class="question4">
-      I like:<br>
-      <input type="checkbox" name="Apples" value="Apples">Apples<br>
+
+      <div class="question2" style="size:12px; font:16px Arial, san-serif">
+      <p>Êtes-vous satisfait du design et de l'accessibilité du site web? Expliquez votre réponse.<br><input type="text" name="quest1"><br></p>
+      <p>Êtes-vous satisfait de la recherche par mot-clé? <br><input type="text" name="quest1"></p>
+      </div>
+
+
+      <div class="question3" style="size:12px; font:16px Arial, san-serif">
+      Les couleurs utilisées sont-elles harmonieuses et logiquement liées ?<br><br>
+      <input type="radio" name="qui" value="Oui">    Oui<br><br>
+      <input type="radio" name="qui" value="non">   Non<br>
+      </div>
+
+
+
+
+
+
+      <div class="question5" style="size:12px; font:16px Arial, san-serif">
+      I like:?????????????????<br>
+      <br><input type="checkbox" name="Apples" value="Apples">Apples<br>
       <input type="checkbox" name="Oranges" value="Oranges">Oranges<br>
       <input type="checkbox" name="Bananas" value="Bananas">Bananas<br>
       </div>
-      <div class="question5">
-      Comments:<br>
-        <textarea rows="5" cols="30"></textarea><br>
-      </div>
-      <div class="question6">
-        <button id="submitButton" type="button" class="block">
-        		SUBMIT your questionnaire
-        </button>
-      </div>
 
-
-
-        <div class="wrap">
-  <h1 class="likert-header">Les couleurs utilisées sont-elles harmonieuses et logiquement liées ?</h1>
+  <div class="wrap">
+  <h1 class="statement">Les couleurs utilisées sont-elles harmonieuses et logiquement liées ?</h1><br>
     <ul class='likert'>
       <li>
         <input type="radio" name="likert" value="strong_agree">
-        <label>Strongly agree</label>
+        <label>Beaucoup</label>
       </li>
       <li>
         <input type="radio" name="likert" value="strong_agree">
-        <label>Agree</label>
+        <label>Oui</label>
       </li>
       <li>
         <input type="radio" name="likert" value="strong_agree">
-        <label>Neutral</label>
+        <label>Neutre</label>
       </li>
       <li>
         <input type="radio" name="likert" value="disagree">
-        <label>Disagree</label>
+        <label>Non</label>
       </li>
       <li>
         <input type="radio" name="likert" value="strong_agree">
-        <label>Strongly disagree</label>
+        <label>Pas du tout</label>
       </li>
     </ul>
-    <label class="statement">It's clear that this is a responsive design.</label>
-    <ul class='likert'>
-      <li>
-        <input type="radio" name="likert" value="strong_agree">
-        <label>Strongly agree</label>
-      </li>
-      <li>
-        <input type="radio" name="likert" value="strong_agree">
-        <label>Agree</label>
-      </li>
-      <li>
-        <input type="radio" name="likert" value="strong_agree">
-        <label>Neutral</label>
-      </li>
-      <li>
-        <input type="radio" name="likert" value="disagree">
-        <label>Disagree</label>
-      </li>
-      <li>
-        <input type="radio" name="likert" value="strong_agree">
-        <label>Strongly disagree</label>
-      </li>
-    </ul>
+  </div>
+  <div class="question4">
+  Commentaires:<br>
+    <textarea rows="5" cols="30"></textarea><br>
+  </div>
     <div class="buttons">
+
+        <button id="submitButton" type="button" class="block">
+            Soummettre le questionnaire
+        </button>
     </form>
   </body>
+  <div class="footer">
+  <p>Auteur: Jad Bennis</p><p>Numero Etudiant: 300077625</p>
+  <p><a href="mailto:jbenn032@uottawa.ca">jbenn032@uottawa.ca</a></p>
+</div>
 </html>
