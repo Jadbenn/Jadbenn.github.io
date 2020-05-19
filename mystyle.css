@@ -6,6 +6,7 @@ div.image {
   align-content: center;
 }
 div.header {
+  top: 0;
   width: 100%;
   position: fixed;
   background-color: #9DB5B2;
