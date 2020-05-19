@@ -1,14 +1,28 @@
 body {
   background-color: #FFFFFF;
 }
+
+div.header {
+  background-color: #9DB5B2;
+  text-align: center;
+  padding: 20px;
+  text
+}
 div.question1 {
   background-color: #EB5E28;
   color: white;
   margin: 20px;
   padding: 20px;
 }
-div.header {
-  background-color: #9DB5B2;
-  text-align: center;
+div.question2 {
+  background-color: #3B413C;
+  color: white;
+  margin: 20px;
+  padding: 20px;
+}
+div.question3 {
+  background-color: #94D1BE;
+  color: white;
+  margin: 20px;
   padding: 20px;
 }
