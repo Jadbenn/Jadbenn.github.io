@@ -2,13 +2,10 @@ body {
   background-color: lightblue;
 }
 div.question1 {
-  background-color: black;
+  background-color: #EB5E28;
   color: white;
   margin: 20px;
   padding: 20px;
-}
-p {
-  text-color: blue;
 }
 div.header {
   background-color: yellow;
