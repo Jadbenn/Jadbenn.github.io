@@ -7,6 +7,11 @@ div.question1 {
   margin: 20px;
   padding: 20px;
 }
-.firstname {
+p {
   text-color: blue;
+}
+.header {
+  background-color: #F1F1F1;
+  text-align: center;
+  padding: 20px;
 }
