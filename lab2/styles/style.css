@@ -1,0 +1,61 @@
+/* This style sheet is taken from  https://www.w3schools.com/howto/howto_js_tabs.asp> */
+
+/* Style the tab */
+.header2 {
+    overflow: hidden;
+    background-color: #f1f1f1;
+
+}
+.header2 button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+.header2 button.active {
+    background-color: ;
+}
+div.jadben{
+  margin: 0;
+  font-family: verdana;
+  font-style: italic;
+  top: 0;
+  width: 97.5%;
+  background-color: #353535;
+  text-align: center;
+  padding: 20px;
+  height:30%;
+  left: 0px;
+  margin-left: 0;
+  z-index: 500
+}
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    font-family: Arial, sans-serif;
+    background-color: #ff4d4d;
+}
+
+
+
+h1 {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+body {
+    background-color: rgba(80, 180, 255, 0.3);
+}
+div.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: gray;
+  color: white;
+  text-align: center;
+  position: fixed;
+}

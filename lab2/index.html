@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <! This style sheet is taken from https://www.w3schools.com/howto/howto_js_tabs.asp>
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <title>GROCERY-LAND</title>
+</head>
+
+<body>
+  <style>
+  body {
+    background-image: url('images/groc.png');
+
+  }
+  </style>
+  <div class="jadben">
+<h1 style="color: white;">GROCERY-LAND</h1>
+</div>
+<!-- Tab links, each one with an onclick event associated with it -->
+<div class="header2">
+  <button class="tablinks" id="client-button">Client</button>
+  <button class="tablinks" id="product-button">Produits</button>
+  <button class="tablinks" id="cart-button">Panier</button>
+</div>
+
+<!-- Tab content -->
+<div id="Client" class="tabcontent">
+    <h3>Informations du client</h3>
+    Choisissez aucune, une ou plusieurs Categories:
+    <br><br>
+    <div id="checkboxes">
+        <label class="container">
+            <input type="checkbox" id="">
+            <span class="checkbox-span">Vegetarien</span>
+        </label>
+        <br>
+        <label class="container">
+            <input type="checkbox" id="gluten-free">
+            <span class="checkbox-span">Sans Gluten</span>
+        </label>
+        <br>
+        <label class="container">
+            <input type="checkbox" id="lactose-free">
+            <span class="checkbox-span">Sans Lactose</span>
+        </label>
+        <br>
+        <label class="container">
+            <input type="checkbox" id="Organique">
+            <span class="checkbox-span">Organique</span>
+        </label>
+    </div>
+</div>
+
+<div id="produits" class="tabcontent">
+    <h3>Les produits</h3>
+    <p id="preselected"></p>
+    Choisissez vos produits:
+    <div id="displayProduct"></div>
+    <br>
+    <button id="addCart" type="button" class="block" onclick="selectedItems()">
+        Ajoutez les produits au panier.
+    </button>
+</div>
+
+<div id="panier" class="tabcontent">
+    <h3>Panier</h3>
+    <p>Voici votre panier.</p>
+    <div id="displayCart"></div>
+</div>
+
+<script src="scripts/groceries.js"></script>
+<script src="scripts/main.js"></script>
+
+
+</body>
+<div class="footer">
+<p>Auteur: Jad Bennis</p><p>Numero Etudiant: 300077625</p>
+<p><a href="mailto:jbenn032@uottawa.ca">jbenn032@uottawa.ca</a></p><br>
+</div>
+</html>
