@@ -34,7 +34,7 @@ var products = [{
         category: "epicerie"
     },
     {
-        name: "Filet de Poisson",
+        name: "Poisson",
         vegetarian: false,
         glutenFree: true,
         price: 5.99,
@@ -90,7 +90,7 @@ var products = [{
         category: "produitslaitiers"
     },
     {
-        name: "Steak de Boeuf",
+        name: "Steak",
         vegetarian: false,
         glutenFree: true,
         price: 8.99,
