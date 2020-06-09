@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <! This style sheet is taken from https://www.w3schools.com/howto/howto_js_tabs.asp>
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-2.0.0.min.js"></script>
+    <script src="scripts/groceries.js"></script>
+    <script src="scripts/main.js"></script>
+    <title>GROCERY-LAND</title>
+</head>
+
+<body>
+  <style>
+  body {
+    background-image: url('images/groc.jpg');
+
+  }
+  </style>
+  <div class="jadben">
+<h1 style="color: white;">GROCERY-LAND</h1>
+</div>
+
+    <!-- Tab links, each one with an onclick event associated with it -->
+    <div class="tab">
+        <button id="ClientBtn" class="tablinks" onclick="openInfo(event, 'Client')">Vos pr&eacute;f&eacute;rences alimentaires</button>
+        <button id="ProductsBtn" class="tablinks" onclick="openInfo(event, 'Products'); populateListProductChoices()">Produits</button>
+        <button id="CartBtn" class="tablinks" onclick="openInfo(event, 'Cart')">Panier</button>
+    </div>
+
+    <!-- Tab content -->
+    <div id="Client" class="tabcontent column">
+        <h3>Pr&eacute;f&eacute;rences alimentaires</h3>
+        <p>Veuillez selectionner vos pr&eacute;f&eacute;rences alimentaires, ou laissez vide si vous en avez aucune.<br></p>
+        <div id="dietSelect">
+            <input type="checkbox" name="Vegetarian" value="Vegetarian" id="Vegetarian">
+            <label>Vegetarien</label><br>
+
+            <input type="checkbox" name="GlutenFree" value="GlutenFree" id="GlutenFree" />
+            <label>Exempts de gluten</label><br>
+
+            <input type="checkbox" name="Organic" value="Organic" id="Organic" />
+            <label>Organique</label><br>
+        </div>
+
+        <button id="submitPrefs" class="btn-primary" onclick="openInfo(event, 'Products'); populateListProductChoices()">Enregistrer vos pr&eacute;f&eacute;rences</button>
+    </div>
+
+    <div id="Products" class="tabcontent column">
+        <h3>Les produits</h3>
+        <p>Nous avons pr&eacute;-selectionn&eacute; des produits bas&eacute;s sur vos pr&eacute;f&eacute;rences alimentaires.</p>
+        Choisissez vos produits:
+        <!-- Images prises de www.walmart.caom -->
+        <div id="displayProduct">
+
+            <button class="accordion">Fruits et legumes</button>
+            <div id="legumes" class="panel category"></div>
+
+            <button class="accordion">Produits laitiers</button>
+            <div id="produitslaitiers" class="panel category"></div>
+
+            <button class="accordion">Viandes et poisson</button>
+            <div id="viandes" class="panel category"></div>
+
+            <button class="accordion">&eacute;picerie</button>
+            <div id="epicerie" class="panel category"></div>
+
+            <button class="accordion">Boissons</button>
+            <div id="boissons" class="panel category"></div>
+
+        </div>
+        <button id="addCart" type="button" class="block btn-primary" onclick="selectedItems(); openInfo(event, 'Cart')">
+			Ajouter au panier ces produits
+		</button><br><br><br><br><br><br><br>
+    </div>
+
+    <div id="Cart" class="tabcontent column">
+        <h3>Panier</h3>
+        <p>Voici les produits dans votre panier</p>
+        <div id="displayCart">
+            <div id="resultsList"></div>
+            <div id="totalCost"></div>
+        </div>
+    </div>
+
+    <!-- This script is taken from https://www.w3schools.com/howto/howto_js_accordion.asp -->
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (var i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                console.log(panel);
+                if (panel.style.display === "flex") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "flex";
+                }
+            });
+        }
+    </script>
+</body>
+
+<div class="footer">
+<p>Auteur: Jad Bennis</p><p>Numero Etudiant: 300077625</p>
+<p><a href="mailto:jbenn032@uottawa.ca">jbenn032@uottawa.ca</a></p><br>
+</div>
+</html>
