@@ -50,7 +50,7 @@ var products = [{
         category: "epicerie"
     },
     {
-        name: "Riz Blanc",
+        name: "Riz",
         vegetarian: true,
         glutenFree: false,
         price: 2.05,
@@ -98,7 +98,7 @@ var products = [{
         category: "viandes"
     },
     {
-        name: "Lait 2%",
+        name: "Lait",
         vegetarian: true,
         glutenFree: true,
         price: 2.99,
