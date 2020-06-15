@@ -1,0 +1,244 @@
+<!-- This file contains many elements adapted from the online tutoral -->
+<!-- on Bootstrap 4 as found here: https://www.w3schools.com/bootstrap4/default.asp -->
+
+<!-- Images source: -->
+<!-- jule.jpg taken from https://www.freepik.com/premium-vector/cartoon-successful-hairdresser_3951066.htm -->
+<!-- Erwind.jpb https://www.kijiji.ca/v-construction-trades-jobs/winnipeg/bicycle-mechanic/1499188319 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- The head should contain an appropriate title for your site -->
+<head>
+    <title>Your Haircut</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Style sheet (CSS) and JavaScript scripts necessary to use Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <!-- Your own additional style sheet -->
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+</head>
+
+
+<body>
+
+    <!-- Medium size container, padding 3, margins 3, background dark, text is white -->
+    <!-- Should show the name of your company with an image or logo -->
+    <!-- Bootstrap has its own font for H1, H2, p, etc.  -->
+    <!-- Look in BS4 Typography https://www.w3schools.com/bootstrap4/bootstrap_typography.asp -->
+    <!-- Use your own CSS file to change those fonts if they do not correspond to your company's look -->
+<div class="header">
+  <div class="container-md p-3 my-3 border bg-dark text-white">
+  <a href="#default" class="logo" style="background: repeating-linear-gradient(45deg,red,white 10px,white 10px,blue 20px);">Your Haircut</a>
+  <h1 style="text-align:center;">Welcome to Your Haircut</h1>
+  <p>Best Barber Shop in Ottawa!</p>
+    </div>
+
+</div>
+
+
+    <!-- When you have messages to tell, remember that center align is not always the best choice -->
+    <div  class="container-md p-3 my-3 border bg-light text-success">
+        <h3 style="color: #1C6E8C;">Let us tell you about our expertise</h3>
+        <p style="color: #1C6E8C;">Founded in <mark>1987</mark>, we are considered the best Barber Shop in whole city.</p>
+        <p style="color: #1C6E8C;" class="text-uppercase">We give more than 18 thousand haircuts per year!!</p>
+    </div>
+
+
+    <!-- Bootstrap has different types of tables https://www.w3schools.com/bootstrap4/bootstrap_tables.asp -->
+    <!-- Might be (or not) useful to show some information to the user -->
+
+    <!-- images links: https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F375135843946112070%2F&psig=AOvVaw0CvJ0RfMaU_4Rg3XKh3624&ust=1592275113875000&source=images&cd=vfe&ved=0CA0QjhxqFwoTCOim3pflguoCFQAAAAAdAAAAABAO -->
+    <!-- images links https://www.google.com/url?sa=i&url=https%3A%2F%2Ftherighthairstyles.com%2F20-statement-medium-hairstyles-for-men%2F&psig=AOvVaw0CvJ0RfMaU_4Rg3XKh3624&ust=1592275113875000&source=images&cd=vfe&ved=0CA0QjhxqFwoTCOim3pflguoCFQAAAAAdAAAAABAT -->
+    <!-- mages links https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F447897125443276247%2F&psig=AOvVaw38FJFNeoMdOZ24ErHTMxqE&ust=1592275326810000&source=images&cd=vfe&ved=0CA0QjhxqFwoTCOiw54LmguoCFQAAAAAdAAAAABAa -->
+    <div class="container">
+        <h2>Service description</h2>
+        <p>Here is a list of services offered</p>
+        <table class="table table-primary table-hover">
+            <thead>
+            <tr>
+                <th>Service</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Example</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Basic Haircut</td>
+                <td>We will give you a haircut that you won't regret.</td>
+                <td>25$</td>
+                <td><img src="images/coupe1.jpg" alt="" border=3 height=150 width=150></img></td>
+
+
+            </tr>
+            <tr>
+                <td>Basic Haircut + Beard </td>
+                <td>We will give you a haircut that you won't regret and a beard trim.</td>
+                <td>30$</td>
+                <td><img src="images/coupe2.jpg" alt="" border=3 height=150 width=150></img></td>
+
+            </tr>
+            <tr>
+                <td>Coloring</td>
+                <td>Full hair coloring and haircut.</td>
+                <td>45$</td>
+                <td><img src="images/coupe3.jpg" alt="" border=3 height=150 width=150></img></td>
+
+            </tr>
+            <tr>
+                <td>Other</td>
+                <td>Just tell us what you want!</td>
+                <td>-</td>
+                <td></td>
+
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+    <!-- Bootstrap has components for alerts: https://www.w3schools.com/bootstrap4/bootstrap_alerts.asp  -->
+    <!-- These can be useful for making sure someone reads something before continuing -->
+    <div class="container">
+        <h2>Alert</h2>
+        <p>Important</p>
+        <div class="alert alert-danger alert-dismissible">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>
+            <strong>Due to Covid restrictions, you must book an appointment for our services.</strong>We do not accept customers with no reservation.
+        </div>
+    </div>
+
+    <!-- Presenting the staff with cards: https://www.w3schools.com/bootstrap4/bootstrap_cards.asp -->
+    <!-- Card columns allows multiple cards next to each other -->
+    <!-- The first card's button doesn't go anywhere, it could be a modal -->
+    <!-- My second card limits the information seen and uses collapsible to show more -->
+
+
+<!-- images links https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DBe-IWz7Q2rM&psig=AOvVaw0DlV8y7adzFUtPjS_X7_oE&ust=1592275621272000&source=images&cd=vfe&ved=0CA0QjhxqFwoTCPC50IrnguoCFQAAAAAdAAAAABAI -->
+<!-- Collapsible with multiple items - accordion -->
+<!-- https://www.w3schools.com/bootstrap4/bootstrap_collapse.asp -->
+
+<div class="container p-3">
+    <h2>Meet our barbers</h2>
+    <div class="card-columns">
+        <div class="card bg-danger" style="width:200px">
+            <img class="card-img-top" src="images/barber.jpg" alt="Card image" style="width:100%">
+            <div class="card-body">
+                <h4 class="card-title">Mario</h4>
+                <p class="card-text">Barber</p>
+                <!-- collapsible part -->
+                <a href="#profile1" class="btn btn-primary" data-toggle="collapse">About Mario</a>
+                <div id="profile1" class="collapse p-2">
+                    <p>Mario has more than 25 years of experience in hairstyling. He studied in Italy where he obatined a barber degree.
+                    He also is the owner of the Barber Shop.</p>
+                </div>
+            </div>
+        </div>
+        <div class="card bg-danger" style="width:200px">
+            <img class="card-img-top" src="images/barber2.jpg" alt="Card image" style="width:100%">
+            <div class="card-body">
+                <h4 class="card-title">Joe</h4>
+                <p class="card-text">Men's Hair Stylist</p>
+                <!-- collapsible part -->
+                <a href="#profile2" class="btn btn-primary" data-toggle="collapse">About Joe</a>
+                <div id="profile2" class="collapse p-3">
+                    <p>Justin has been cutting and styling hair for more than 15 years. He is passionate about what he is doing.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- Collapsible with multiple items - accordion -->
+    <!-- https://www.w3schools.com/bootstrap4/bootstrap_collapse.asp -->
+    <!-- As we want to do a vertical navigation better suited for mobile design, an accordion pattern -->
+    <!-- could work well.  You can use other patterns too.  This is just an example. -->
+    <div  style="background-color: #274156;" class="container">
+        <div  style="background-color: #274156; color: white;"><br>
+            <h1>Your Haircut</h1>
+            <p>Make an appointment</p>
+        </div>
+        <div id="accordion">
+            <div class="card">
+                <div class="card-header">
+                    <a class="card-link" data-toggle="collapse" href="#collapseService">Choose a service</a>
+                </div>
+                <div id="collapseService" class="collapse show" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>Here is our list of services</p>
+                        <form>
+                            <input type="radio" name="hair" value="Men's Haircut">Basic Haircut - $25<br>
+                            <input type="radio" name="hair" value="Hair Trim">Basic Haircut + Beard Trim - $30<br>
+                            <input type="radio" name="hair" value="HairConsult">Hair Colouring + Haircut - $40<br>
+                            <input type="radio" name="hair" value="BlowDry">Other<br>
+                    </form>
+                    </div>
+                    <div class="buttons">
+                     <button style="background-color:gray;" class="submit">Save</button>
+                    </div>
+                </div>
+            <div class="card">
+                <div class="card-header">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseDate">Choose a date</a>
+                </div>
+                <div id="collapseDate" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>What date?</p>
+                        <!-- Bootstrap has various input components. Some examples are given here: -->
+                        <!-- Component shown here: https://v4-alpha.getbootstrap.com/components/forms/#textual-inputs -->
+                        <div class="form-group row">
+                            <label for="dateTimeInput" class="col-2 col-form-label">Date and time</label>
+                            <div class="col-10">
+                                <input class="form-control" type="datetime-local" value="2011-08-19T13:45:00" id="dateTimeInput">
+                            </div>
+                        </div>
+                        <div class="buttons">
+                         <button style="background-color:gray;" class="submit">Save</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <a class="collapsed card-link" data-toggle="collapse" href="#collapseClientInfo">Your info</a>
+                </div>
+                <div id="collapseClientInfo" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>Your information so we can contact you</p>
+                        <p>Form to enter name, email, phone</p>
+                        <form name="User Info Questionaire" method="POST">
+                             <div style="font-family:verdana">
+                                <b>Contact Information: </b>:<br>
+                                <br>
+                                 <textarea name="comment[body]" rows="10" cols="50" wrap="physical" id="fav_val"></textarea>
+                                 <br>
+                            </div>
+
+                        </form>
+                    </div>
+                    <div class="buttons">
+                     <button style="background-color:gray;" class="submit">Submit</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="container-md p-3 my-3 border bg-light text-success">
+        <h3 style="color: black;">About us</h3>
+        <p style="color: #274156;"><b>Location: </b>111 Bay Street, K1N 67G Ottawa</b><br><b>Contact Number: </b> (613) 0202-0303  </br><b>Email Address: </b> yourbarber@gmail.com </br><b>Business Hours: </b> Everyday from 8am to 8pm  </p>
+    </div><br><br><br><br><br><br>
+
+</body>
+<div class="footer">
+<p>Auteur: Jad Bennis</p><p>Numero Etudiant: 300077625</p>
+<p><a href="mailto:jbenn032@uottawa.ca">jbenn032@uottawa.ca</a></p><br>
+</div>
+</html>
