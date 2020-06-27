@@ -1,0 +1,282 @@
+<!-- This file contains many elements adapted from the online tutoral -->
+<!-- on Bootstrap 4 as found here: https://www.w3schools.com/bootstrap4/default.asp -->
+
+<!-- Images source: -->
+<!-- images links: https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F375135843946112070%2F&psig=AOvVaw0CvJ0RfMaU_4Rg3XKh3624&ust=1592275113875000&source=images&cd=vfe&ved=0CA0QjhxqFwoTCOim3pflguoCFQAAAAAdAAAAABAO -->
+<!-- images links https://www.google.com/url?sa=i&url=https%3A%2F%2Ftherighthairstyles.com%2F20-statement-medium-hairstyles-for-men%2F&psig=AOvVaw0CvJ0RfMaU_4Rg3XKh3624&ust=1592275113875000&source=images&cd=vfe&ved=0CA0QjhxqFwoTCOim3pflguoCFQAAAAAdAAAAABAT -->
+<!-- images links https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F447897125443276247%2F&psig=AOvVaw38FJFNeoMdOZ24ErHTMxqE&ust=1592275326810000&source=images&cd=vfe&ved=0CA0QjhxqFwoTCOiw54LmguoCFQAAAAAdAAAAABAa -->
+<!-- images links https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DBe-IWz7Q2rM&psig=AOvVaw0DlV8y7adzFUtPjS_X7_oE&ust=1592275621272000&source=images&cd=vfe&ved=0CA0QjhxqFwoTCPC50IrnguoCFQAAAAAdAAAAABAI -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+  <!-- The head should contain an appropriate title for your site -->
+  <head>
+    <title>Your Haircut</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Style sheet (CSS) and JavaScript scripts necessary to use Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <!-- Style sheet (CSS) and JavaScript scripts necessary to use JQuery as well as JQueryUI library -->
+    <!-- which is built on top of JQuery and offers additional possibilities -->
+    <!-- For example, JQuery UI has a datepicker which is popular and that we can use -->
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+    <!-- Your own script -->
+    <script src="scripts/jad.js"></script>
+
+    <!-- Your own additional style sheet -->
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  </head>
+
+
+  <body>
+
+    <!-- Using the collapsible Navbar, so we see the hamburger menu icon -->
+    <!-- It really has become a standard. -->
+    <!-- As your page is a vertical page (Module 4 requirement), you mus use the navbar -->
+    <!-- to just jump to parts of the page. What I put as First/Second/Third here would -->
+    <!-- be sections in your page. -->
+    <div class="header">
+      <div class="container-md p-3 my-3 border bg-dark text-white">
+      <a href="#default" class="logo" style="background: repeating-linear-gradient(45deg,red,white 10px,white 10px,blue 20px);">Your Haircut</a>
+      <h1 style="text-align:center;">Welcome to Your Haircut</h1>
+      <p>Best Barber Shop in Ottawa!</p>
+        </div>
+
+    </div>
+
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+      <a class="navbar-brand" href="#"><img src="https://img.icons8.com/officexs/24/000000/barber-pole.png" width="35" height="35"/></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+	<span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+	<ul class="navbar-nav">
+	  <li class="nav-item">
+            <a class="nav-link" href="#services">Services</a>
+	  </li>
+	  <li class="nav-item">
+            <a class="nav-link" href="#appointments">Make an Appointment</a>
+	  </li>
+	  <li class="nav-item">
+            <a class="nav-link" href="#location">About Us</a>
+	  </li>
+	</ul>
+      </div>
+    </nav>
+
+    <!-- When you have messages to tell, remember that center align is not always the best choice -->
+    <div  class="container-md p-3 my-3 border bg-light text-success">
+        <h3 style="color: #1C6E8C;">Let us tell you about our expertise</h3>
+        <p style="color: #1C6E8C;">Founded in <mark>1987</mark>, we are considered the best Barber Shop in whole city.</p>
+        <p style="color: #1C6E8C;" class="text-uppercase">We give more than 18 thousand haircuts per year!!</p>
+    </div>
+
+    <!-- Bootstrap has different types of tables https://www.w3schools.com/bootstrap4/bootstrap_tables.asp -->
+    <!-- Might be (or not) useful to show some information to the user -->
+    <div class="container p-3" id="services">
+      <h2>Service description</h2>
+      <p>Here is a list of services offered</p>
+      <table class="table table-primary table-hover">
+          <thead>
+          <tr>
+              <th>Service</th>
+              <th>Description</th>
+              <th>Price</th>
+              <th>Example</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+              <td>Basic Haircut</td>
+              <td>We will give you a haircut that you won't regret.</td>
+              <td>25$</td>
+              <td><img src="images/coupe1.jpg" alt="" border=3 height=150 width=150></img></td>
+
+
+          </tr>
+          <tr>
+              <td>Basic Haircut + Beard </td>
+              <td>We will give you a haircut that you won't regret and a beard trim.</td>
+              <td>30$</td>
+              <td><img src="images/coupe2.jpg" alt="" border=3 height=150 width=150></img></td>
+
+          </tr>
+          <tr>
+              <td>Coloring</td>
+              <td>Full hair coloring and haircut.</td>
+              <td>45$</td>
+              <td><img src="images/coupe3.jpg" alt="" border=3 height=150 width=150></img></td>
+
+          </tr>
+          <tr>
+              <td>Other</td>
+              <td>Just tell us what you want!</td>
+              <td>-</td>
+              <td></td>
+
+          </tr>
+          </tbody>
+      </table>
+  </div>
+
+  <!-- images links https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DBe-IWz7Q2rM&psig=AOvVaw0DlV8y7adzFUtPjS_X7_oE&ust=1592275621272000&source=images&cd=vfe&ved=0CA0QjhxqFwoTCPC50IrnguoCFQAAAAAdAAAAABAI -->
+  <!-- Collapsible with multiple items - accordion -->
+  <!-- https://www.w3schools.com/bootstrap4/bootstrap_collapse.asp -->
+
+  <div class="container p-3">
+      <h2>Meet our barbers</h2>
+      <div class="card-columns">
+          <div class="card bg-danger" style="width:200px">
+              <img class="card-img-top" src="images/barber.jpg" alt="Card image" style="width:100%">
+              <div class="card-body">
+                  <h4 class="card-title">Mario</h4>
+                  <p class="card-text">Barber</p>
+                  <!-- collapsible part -->
+                  <a href="#profile1" class="btn btn-primary" data-toggle="collapse">About Mario</a>
+                  <div id="profile1" class="collapse p-2">
+                      <p>Mario has more than 25 years of experience in hairstyling. He studied in Italy where he obatined a barber degree.
+                      He also is the owner of the Barber Shop.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="card bg-danger" style="width:200px">
+              <img class="card-img-top" src="images/barber2.jpg" alt="Card image" style="width:100%">
+              <div class="card-body">
+                  <h4 class="card-title">Joe</h4>
+                  <p class="card-text">Men's Hair Stylist</p>
+                  <!-- collapsible part -->
+                  <a href="#profile2" class="btn btn-primary" data-toggle="collapse">About Joe</a>
+                  <div id="profile2" class="collapse p-3">
+                      <p>Justin has been cutting and styling hair for more than 15 years. He is passionate about what he is doing.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+    <div style="background-color: #274156;" class="container p-3" id="appointments">
+      <div  style="background-color: #274156; color: white;"><br>
+          <h1>Your Haircut</h1>
+          <p>Make an appointment</p>
+      </div>
+      <div id="accordion" class="pb-3">
+	<div class="card">
+          <div class="card-header">
+            <a class="card-link" data-toggle="collapse" href="#collapseService"> <img src="https://img.icons8.com/material/24/000000/comb.png" width="25" height="25"/>  Choose a Service</a>
+          </div>
+          <div id="collapseService" class="collapse show" data-parent="#accordion">
+            <div class="card-body">
+	      <div class="form-group">
+		<label for="exampleFormControlSelect2">Select one or more services to be performed</label>
+		<select multiple class="form-control" id="exampleFormControlSelect2">
+		  <option>Basic Haircut $25</option>
+		  <option>Basic Haircut + Beard Trim - $30</option>
+		  <option>Hair Colouring + Haircut - $40</option>
+		  <option>Other</option>
+		</select>
+	      </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              <a class="collapsed card-link" data-toggle="collapse" href="#collapseClientInfo"><img src="https://img.icons8.com/android/24/000000/user.png" width="30" height="30"/>  Your Info</a>
+            </div>
+            <div id="collapseClientInfo" class="collapse" data-parent="#accordion">
+              <div class="card-body">
+		<p>Your information so we can contact you</p>
+		<p>Form to enter name, email, phone</p>
+		<div class="form-group">
+		  <label for="exampleFormControlInput1">Name</label>
+		  <input class="form-control" id="name">
+		</div>
+		<div class="form-group">
+		  <label for="exampleFormControlInput1">Email address</label>
+		  <input type="email" class="form-control" id="email" placeholder="name@example.com">
+		</div>
+		<div class="form-group">
+		  <label for="exampleFormControlInput1">Phone number</label>
+		  <input type="email" class="form-control" id="phone" placeholder="XXX-XXX-XXXX">
+		</div>
+        </div>
+        </div>
+          </div>
+    <div class="card">
+      <div class="card-header">
+        <a class="collapsed card-link" data-toggle="collapse" href="#collapseChoose"><img src="https://img.icons8.com/android/24/000000/barber-chair.png" width="30" height="30"/>  Choose a barber</a>
+      </div>
+      <div id="collapseChoose" class="collapse" data-parent="#accordion">
+      <div class="card-body">
+		<label for="exampleFormControlSelect1">Select your preferred barbers</label>
+		<select class="form-control">
+      <option value="any">Any available barber</option>
+		  <option value="joe">Joe (Monday to Friday from 8am to 2pm)</option>
+		  <option value="mario">Mario (Monday to Friday from 2pm to 8pm)</option>
+		</select>
+	      </div>
+            </div>
+          </div>
+	  <div class="card">
+            <div class="card-header">
+              <a class="collapsed card-link" data-toggle="collapse" href="#collapseDate"><img src="https://img.icons8.com/android/24/000000/calendar.png" width="30" height="30"/>  Choose a Date</a>
+            </div>
+            <div id="collapseDate" class="collapse" data-parent="#accordion">
+              <div class="card-body">
+                <p>What date?</p>
+            		<!-- Bootstrap has various input components. Some examples are given here: -->
+            		<!-- Component shown here: https://v4-alpha.getbootstrap.com/components/forms/#textual-inputs -->
+            		<div class="form-group row">
+                  <!-- The calendar is from https://developer.mozilla.org/fr/docs/Web/HTML/Element/Input/datetime-local  -->
+                  <label for="meeting-time">Choose a time for your appointment:</label>
+
+                  <input type="datetime-local" id="meeting-time"
+                         name="meeting-time" value="2020-07-03T17:30"
+                         min="2020-06-28T00:00" max="2020-09-30T00:00">
+            		</div>
+                          </div>
+                        </div>
+                      </div>
+            	  <div class="card">
+                        <div class="card-header">
+                          <a class="collapsed card-link" data-toggle="collapse" href="#collapsePaymentInfo"><img src="https://img.icons8.com/ios-glyphs/30/000000/insert-credit-card.png" width="30" height="30"/>  Payment Info</a>
+                        </div>
+                        <div id="collapsePaymentInfo" class="collapse" data-parent="#accordion">
+                          <div class="card-body">
+		<p>Please enter a valid credit card number</p>
+		<input placeholder="XXXX XXXX XXXX XXXX" type="text" id="credit" title="This is used for last minutes cancellations. You won't be charged right now." data-toggle="tooltip" data-placement="top">
+    <p>Please enter the CVV</p>
+    <input placeholder="XXX" type="text" id="creditcvv"  data-toggle="tooltip" data-placement="top">
+
+              </div>
+            </div>
+          </div>
+	</div>
+      </div>
+      <button style="background-color:gray;" type="button" class="btn btn-primary">Submit</button>
+    </div>
+
+    <div class="container p-3" id="location">
+      <div class="container-md p-3 my-3 border bg-light text-success">
+          <h3 style="color: black;">About us</h3>
+          <p style="color: #274156;"><b>Location: </b>111 Bay Street, K1N 67G Ottawa</b><br><b>Contact Number: </b> (613) 0202-0303  </br><b>Email Address: </b> yourbarber@gmail.com </br><b>Business Hours: </b> Monday to Friday from 8am to 8pm  </p>
+      </div><br><br><br><br><br><br>
+
+      </div>
+    </div>
+  </body>
+  <div class="footer">
+  <p>Auteur: Jad Bennis</p><p>Numero Etudiant: 300077625</p>
+  <p><a href="mailto:jbenn032@uottawa.ca">jbenn032@uottawa.ca</a></p><br>
+  </div>
+
+</html>
