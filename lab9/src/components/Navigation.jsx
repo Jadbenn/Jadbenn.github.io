@@ -20,11 +20,12 @@ function Navigation() {
     <div className="container ">
 
       <Nav>
-      <Navbar class="  " className='m-auto'>
+      <Navbar bg="light" variant="light" class="  " className='m-auto'>
+      <h1>Complex Sports&#10003;</h1>
 
-      <Nav.Link href="/"><u class="text-secondary   px-10"><Trans>home</Trans></u></Nav.Link>
-      <Nav.Link href="/exhibition"><u class="text-secondary  "> <Trans>exhibition</Trans></u></Nav.Link>
-      <Nav.Link href="/about"><u class="text-secondary  "><Trans>about</Trans></u></Nav.Link>
+      <Nav.Link href="/"><u class="text-secondary   px-10"><Trans>Reservation</Trans></u></Nav.Link>
+      <Nav.Link href="/Rates"><u class="text-secondary  "> <Trans>Rates</Trans></u></Nav.Link>
+      <Nav.Link href="/CompleteTeam"><u class="text-secondary  "><Trans>CompleteTeam</Trans></u></Nav.Link>
       <Button variant=" text-secondary  "><u><Trans>language</Trans></u></Button>
       <Button  onClick={() => {changeLanguage("fr");window.location.reload(false)}}>fr</Button>
             <Button onClick={() => {changeLanguage("en");window.location.reload(false)}}>en</Button>
